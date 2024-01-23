@@ -22,6 +22,8 @@ As part of the culmination of my academic journey, I am currently working on a g
 
 ## Volunteering
 
+![Volunteering Image](/images/volunteering.png)
+
 My interest in robotics ignited in 2019 when I encountered the [ANATEK aviation team at METU](https://www.anatek.org/) 🛩️, showcasing a powerful quadcopter. This encounter led me to delve into electronics and software, sparking a fascination with the complexities of robotic reliability. Joining projects like the [AUVSI-SUAS 2022](https://suas-competition.org/competitions) competition and the [Teknofest 2023 Mixed Swarm Competition](https://www.teknofest.org/en/competitions/swarm-uav-competition/), I honed my skills in avionics, path-planning, and swarm intelligence. You can see more at Projects tab!!!
 
 ## Leadership and Soft Skills
