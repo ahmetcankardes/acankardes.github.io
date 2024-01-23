@@ -12,7 +12,7 @@ The Swarm UAV Competition, organized within the TEKNOFEST Technology competition
 
 My responsibilities included working on controllers (Mellinger, PID, etc.) and designing software algorithms for navigation and trajectory. Also I was responsiblo to manage the project progression as team captain.
 
-### Position Controller
+## 1.Position Controller
 
 The position controller was designed to enable agents to move from one point to another. Due to the restrictions on using the goTo functions of Crazyswarm and Cflib libraries specified in the competition rules, a custom module was required. Several conditions were considered in developing this module:
 
@@ -34,7 +34,7 @@ The first set of algorithms was based on the relationship between path, speed, a
 | Time           | t                  |
 | Deceleration   | a                  |
 
-$\x(t) = x_0 + vt + \frac{1}{2}at^2$ (1)
+$x(t) = x_0 + vt + \frac{1}{2}at^2$ (1)
 
 Python was employed to implement the algorithm, and it was tested in simulation for a single agent. The results indicated stable operation with a low margin of error, especially when limiting speed and acceleration values. However, concerns arose regarding the adaptability of this algorithm to real-world scenarios involving multiple agents, where unforeseen changes during flight could occur. Due to the inability to respond to unpredictable changes, such as interactions between agents, communication disruptions, and errors in individual controllers, it was decided that this algorithm was not suitable for use.
 
@@ -48,9 +48,50 @@ The first step in developing a controller is accurately defining the system. Res
   <img src="/images/pid_position.png" alt="Figure 1 - Position Controller"/>
 </p>
 
+<p align="center">
+  <em>Figure 1 - Position Controller</em>
+</p>
+
+
 
 After designing the system, a PID controller was implemented in Python. Subsequent tests were conducted in the simulation, and PID parameters were calibrated. Finally, real-world tests on a Crazyflie confirmed that the controller operated optimally under various conditions.
 
 To showcase the performance of developed position controller, I have prepared two videos. The first video presents simulation results using Gazebo with CrazyS, offering insights into the algorithms' behavior in a controlled virtual environment. The second video showcases real-life tests conducted with a Crazyflie 2.1 equipped with the Lighthouse positioning system, demonstrating the practical implementation of our algorithms in a physical setting.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SUDe9ivEPgo" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U0jJdcwHOl4" frameborder="0" allowfullscreen></iframe>
+
+## 2.Trajecteroy Generation and Mellinger Controller
+
+### Smooth Trajectory Planning
+
+In the competition, the requirement is to navigate smoothly through obstacles. Planning a route solely based on waypoints wouldn't meet this criterion. Therefore, a literature review was conducted on how to achieve smooth trajectory tracking using intermediate waypoints. The work done here is based on the research of [Kumar and Mellinger(2011)](https://ieeexplore.ieee.org/abstract/document/5980409).
+
+#### Mellinger Controller
+
+The Mellinger controller utilizes a non-linear model of the dynamics of a quadcopter, employing a feedback loop to accurately track the desired position and orientation of the drone. The feedback loop consists of an attitude controller and a position controller. The attitude controller manages the orientation of the drone, while the position controller governs translational motion. The attitude controller employs a non-linear controller using the rotation matrix and quaternion representation of the drone's attitude. Additionally, the position controller compares the desired and current positions using data from sensors, producing thrust commands to control the drone's position with a proportional-derivative (PD) controller. The attitude controller, in turn, generates torque commands by comparing the desired and current attitudes using data from the position controller and sensors.
+
+The Mellinger controller has been implemented for the Crazyflie 2.X drones intended for use in the competition. Therefore, it is concluded that this controller can be readily employed if the necessary trajectory can be generated.
+
+#### Trajectory Generation
+
+To ensure smooth navigation to the destination, trajectory planning is essential. Numerous trajectory generation algorithms exist for quadcopters, and this stage is critical for four-motor drone control.
+
+Piecewise polynomial functions are significant methods used in trajectory calculations. By solving a group of linear equations obtained from drone dynamics and boundary conditions, the coefficients of the polynomial function can be determined. The trajectory obtained for an environment including cylindirical obstacles is given in Figure 2.
+
+<p align="center">
+  <img src="/images/pid_position.png" alt="Figure 1 - Position Controller"/>
+</p>
+
+<p align="center">
+  <em>Figure 2 - Example Trajectory</em>
+</p>
+
+Taking derivatives of this trajectory provides the necessary position, velocity, and acceleration vectors. Through experiments, it has been observed that sending only the position vector to the agents at the required frequency enables successful trajectory tracking. The following video shows the applied alforithms for trajectory tracking with a Crazyflie 2.1 and Lighthouse Positioning System.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oY1j8kOTbE8" frameborder="0" allowfullscreen></iframe>
+
+## Important Reminder
+
+Since this was a team project, I cannot share codes without permission of my team 😞.
