@@ -34,7 +34,7 @@ The first set of algorithms was based on the relationship between path, speed, a
 | Time           | t                  |
 | Deceleration   | a                  |
 
-\[x(t) = x_0 + vt + \frac{1}{2}at^2\] (1)
+$\x(t) = x_0 + vt + \frac{1}{2}at^2$ (1)
 
 Python was employed to implement the algorithm, and it was tested in simulation for a single agent. The results indicated stable operation with a low margin of error, especially when limiting speed and acceleration values. However, concerns arose regarding the adaptability of this algorithm to real-world scenarios involving multiple agents, where unforeseen changes during flight could occur. Due to the inability to respond to unpredictable changes, such as interactions between agents, communication disruptions, and errors in individual controllers, it was decided that this algorithm was not suitable for use.
 
@@ -51,3 +51,6 @@ The first step in developing a controller is accurately defining the system. Res
 
 After designing the system, a PID controller was implemented in Python. Subsequent tests were conducted in the simulation, and PID parameters were calibrated. Finally, real-world tests on a Crazyflie confirmed that the controller operated optimally under various conditions.
 
+To showcase the performance of developed position controller, I have prepared two videos. The first video presents simulation results using Gazebo with CrazyS, offering insights into the algorithms' behavior in a controlled virtual environment. The second video showcases real-life tests conducted with a Crazyflie 2.1 equipped with the Lighthouse positioning system, demonstrating the practical implementation of our algorithms in a physical setting.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SUDe9ivEPgo" frameborder="0" allowfullscreen></iframe>
