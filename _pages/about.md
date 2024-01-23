@@ -16,7 +16,7 @@ I am a senior Electrical & Electronics Engineering student at Middle East Techni
 
 I graduated from Malatya Anatolian High School, securing the second position. Subsequently, after the university examination, I earned the opportunity to pursue my higher education at Middle East Technical University in Electrical and Electronics Engineering. The first year of my academic journey involved English Preparation School studies.
 
-Upon completing the preparatory year, I transitioned to my undergraduate studies. During the course of my academic journey, I developed a keen interest in Control Theory. For my senior year, I specialized in Control Theory as my departmental option. Throughout my undergraduate studies, I engaged in various projects related to the courses I undertook. You can see some in Projects tab.
+Upon completing the preparatory year, I transitioned to my undergraduate studies. During the course of my academic journey, I developed a keen interest in Control Theory. For my senior year, I specialized in Control Theory as my departmental option. Throughout my undergraduate studies, I engaged in various projects related to the courses I undertook. You can see some in Portfolio tab.
 
 As part of the culmination of my academic journey, I am currently working on a graduation project with my team, 'Dinoco-Slam.' Our chosen project falls under the category of Autonomous Unmanned Ground Vehicle (UGV). For detailed insights into the department's graduation projects, you can visit [this link](https://capstone.eee.metu.edu.tr/projects-2023-24/).
 
@@ -24,11 +24,9 @@ As part of the culmination of my academic journey, I am currently working on a g
 
 ![Volunteering Image](/images/volunteering.png)
 
-My interest in robotics ignited in 2019 when I encountered the [ANATEK aviation team at METU](https://www.anatek.org/) 🛩️, showcasing a powerful quadcopter. This encounter led me to delve into electronics and software, sparking a fascination with the complexities of robotic reliability. Joining projects like the [AUVSI-SUAS 2022](https://suas-competition.org/competitions) competition and the [Teknofest 2023 Mixed Swarm Competition](https://www.teknofest.org/en/competitions/swarm-uav-competition/), I honed my skills in avionics, path-planning, and swarm intelligence. You can see more at Projects tab!!!
+My interest in robotics ignited in 2019 when I encountered the [ANATEK aviation team at METU](https://www.anatek.org/) 🛩️, showcasing a powerful quadcopter. This encounter led me to delve into electronics and software, sparking a fascination with the complexities of robotic reliability. Joining projects like the [AUVSI-SUAS 2022](https://suas-competition.org/competitions) competition and the [Teknofest 2023 Mixed Swarm Competition](https://www.teknofest.org/en/competitions/swarm-uav-competition/), I honed my skills in avionics, path-planning, and swarm intelligence. You can see more at Portfolio tab!!! 
 
-## Leadership and Soft Skills
-
-As a key member of the ANATEK Team, I have honed essential soft skills and fostered interdisciplinary teamwork. In addition to technical pursuits, I drive educational initiatives, establishing programs in software proficiency and serving as the current team captain, overseeing projects and emphasizing cohesive team leadership.
+Furthermore, I have honed essential soft skills and fostered interdisciplinary teamwork as a member of the ANATEK Team. In addition to technical pursuits, I drive educational initiatives, preparing curriculums for Arduino and Python. Also serving as the current team captain, I am responsible to check the progress in the projects, finance and sponsorships.
 
 ## Professional Experience
 
