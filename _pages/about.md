@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Ahmet Cankardes"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from:
@@ -40,6 +40,9 @@ My journey in robotics has fueled a desire to pursue a Master’s Degree in Robo
 
 ## Getting Started
 
-If you're interested in my academic and professional journey, feel free to explore the various sections of this website. You can find information on projects I have contributed. This website is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io).
+If you're interested in my academic and professional journey, feel free to explore the various sections of this website. You can find information on projects I have contributed.
 
 Thank you for visiting, and I hope you enjoy exploring my journey! I will be happy to answer your questions through my mail if you have any.
+
+## Reference
+This website is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io).
