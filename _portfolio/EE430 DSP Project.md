@@ -31,9 +31,6 @@ A MATLAB code is written to display the spectrogram of a discrete-time signal. T
 ### Implementation and Deliverables
 A graphical user interface (GUI) is created using MATLAB's app designer to facilitate data acquisition, data generation, and spectrogram visualization. The GUI allows users to adjust parameters such as sampling rate, amplitude, frequency, phase, and signal duration.
 
-## Navigation to GitHub Page
-For detailed MATLAB code and further project details, please refer to the GitHub repository
-
 # EE430 Term Project Part 2
 
 ## Exploring DTMF Signaling
@@ -44,7 +41,7 @@ In this phase of the project, I delved into the fascinating world of dual-tone m
 
 Signaling, the art of exchanging information among network devices, forms the backbone of communication sessions. From dialing a phone number to controlling automated equipment, signaling plays a pivotal role. The evolution from the clunky rotary phones to the sleek push-button dialing system marked a significant shift in telecommunications.
 
-### DTMF Signaling Magic
+### DTMF Signaling
 
 Unlike the pulse dialing of rotary phones, push-button dialing introduced the efficiency of DTMF signaling. Each key press generates a unique combination of two constant frequencies, paving the way for faster and more effective communication. In the realm of DTMF, every key is encoded using eight tones, split into four high and four low-frequency groups.
 
@@ -80,13 +77,11 @@ Here, $T_r$ is the resting duration between two consecutively pressed keys.
 
 ### Receiver Panel Charm
 
-- Input fields for $T_d$ and \$T_r$,
 - A user-friendly start/stop button for seamless listening,
 - Visually stunning displays of the received time-domain signal and its spectrogram,
 - A switch for selecting the decoding algorithm,
 - A field to showcase the magic of the decoded signal.
 
-## Navigating the GitHub Odyssey
+# Github Repo
 
-For an in-depth exploration, feel free to dive into the GitHub repository. Witness the magic unfold through meticulously crafted MATLAB code and project details.
-
+For an in-depth exploration, feel free to dive into the [GitHub repository](https://github.com/ahmetcankardes/EE430-Digital-Signal-Processing-METU-EEE-Project). You can see more details about the code and used algorithms. Thanks for visiting 😃
