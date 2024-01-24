@@ -36,66 +36,57 @@ For detailed MATLAB code and further project details, please refer to the GitHub
 
 # EE430 Term Project Part 2
 
-## Background
+## Exploring DTMF Signaling
 
-Signaling is the exchange of information using signals between network devices to manage communication sessions. One example is dialing a phone number, where dialed digits are transmitted to route the call correctly. In the past, rotary dialing was standard, but it was slow and inefficient. To address this, push-button dialing with dual-tone multi-frequency (DTMF) signaling was developed. Each key press generates a signal composed of two constant frequencies. Part 2 of the project involves experimenting with DTMF signaling.
+In this phase of the project, I delved into the fascinating world of dual-tone multi-frequency (DTMF) signaling with my friend Hasan again. The aim was to implement signal processing methods using MATLAB to generate, transmit, receive, and decode audio DTMF signals.
 
-### DTMF Encoding Formula
+## Unveiling the Background
 
-A DTMF-encoded key can be expressed as follows:
+Signaling, the art of exchanging information among network devices, forms the backbone of communication sessions. From dialing a phone number to controlling automated equipment, signaling plays a pivotal role. The evolution from the clunky rotary phones to the sleek push-button dialing system marked a significant shift in telecommunications.
+
+### DTMF Signaling Magic
+
+Unlike the pulse dialing of rotary phones, push-button dialing introduced the efficiency of DTMF signaling. Each key press generates a unique combination of two constant frequencies, paving the way for faster and more effective communication. In the realm of DTMF, every key is encoded using eight tones, split into four high and four low-frequency groups.
+
+## Decoding the Secrets
+
+### Formulas in Action
+
+The encoding of a DTMF-encoded key involves mathematical wizardry, expressed as:
+
 $s(k)(t; T_d) = (\sin(f_L(k)t) + \sin(f_H(k)t)) \cdot (u(t) - u(t - T_d))$
-where:
-- \(s\) is the time-domain signal corresponding to the pressed key,
-- \(k\) is the index of the key,
-- \(f_L(k)\) and \(f_H(k)\) are the respective low and high frequencies,
-- \(T_d\) is the signaling duration per key.
 
-### DTMF-encoded Sequence Formula
+This formula encapsulates the essence of encoding, where $s$ is the time-domain signal, $k$ is the key index, $f_L(k)$ and $f_H(k)$ are low and high frequencies, and $T_d$ is the signaling duration per key.
 
-Given a discrete sequence of numbers \(x[n]\), the DTMF-encoded sequence \(m(t; T_d, T_r)\) can be expressed as:
-\[m(t; T_d, T_r) = \sum s(x[k])(t - k(T_d + T_r); T_d) \quad \text{where} \quad k = 0, 1, \ldots, N-1\]
-and \(T_r\) is the resting duration between two consecutively pressed keys.
+### Sequencing the DTMF
 
-## Deliverables
+Given a sequence of numbers $x[n]$, the DTMF-encoded sequence $m(t; T_d, T_r)$ can be expressed as:
 
-For all items, you are required to write MATLAB codes and design a graphical user interface (GUI) using the app designer.
+$ m(t; T_d, T_r) = \sum s(x[k])(t - k(T_d + T_r); T_d)$
 
-### Transmitter Panel
+Here, $T_r$ is the resting duration between two consecutively pressed keys.
 
-- A push-button keypad,
-- A display field to show pressed keys as text,
-- A reset button to clear pressed keys,
-- Input fields for signaling duration per key (\(T_d\)) and resting duration (\(T_r\)),
-- An input field to adjust the amplitude of the time-domain signal,
-- A time-domain signal panel to display the DTMF-encoded sequence \(m(t; T_d, T_r)\),
-- Display of the spectrogram of the generated signal \(m(t; T_d, T_r)\),
-- Save and play buttons for saving and playing the generated signal as audio.
+## Presenting the Portfolio Showcase
 
-### Receiver Panel
+### Transmitter Panel Highlights
 
-- Input fields for signaling duration per key (\(T_d\)) and resting duration (\(T_r\)),
-- Start/stop listening button,
-- A display to plot the received time-domain signal,
-- A display to plot its spectrogram,
-- A switch to select the decoding algorithm,
-- A display field to show the decoded signal.
+- A sleek push-button keypad,
+- A dynamic display field showcasing pressed keys,
+- A handy reset button for a clean slate,
+- Adjustable parameters for signaling duration $T_d$, resting duration $T_r$, and amplitude,
+- A visual representation of the DTMF-encoded sequence,
+- An artistic display of the signal's spectrogram,
+- Convenient buttons for saving and playing the generated audio signal.
 
-## Further Reading
+### Receiver Panel Charm
 
-For real-time displays, you can plot the signals at a separate figure from the GUI. You can also create checkbox elements to enable/disable plotting to balance the load on processing if needed.
+- Input fields for $T_d$ and \$T_r$,
+- A user-friendly start/stop button for seamless listening,
+- Visually stunning displays of the received time-domain signal and its spectrogram,
+- A switch for selecting the decoding algorithm,
+- A field to showcase the magic of the decoded signal.
 
-For decoding the received signal, the user must be able to select between a spectrogram-based method and another algorithm of your choice.
+## Navigating the GitHub Odyssey
 
-• DTMF: https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling
-• Signalling: https://en.wikipedia.org/wiki/Signaling_(telecommunications)
-• Filter Banks: https://en.wikipedia.org/wiki/Filter_bank
-• Goertzel algorithm: https://en.wikipedia.org/wiki/Goertzel_algorithm
-• MUSIC algorithm: https://en.wikipedia.org/wiki/MUSIC_(algorithm)
-• Real Time Audio: https://www.mathworks.com/help/audio/gs/real-time-audio-in-matlab.html
-• Audio I/O Buffering: https://www.mathworks.com/help/audio/gs/audio-io-buffering-latency-andthroughput.html
-
-
-## Navigation to GitHub Page
-
-For detailed MATLAB code and further project details, please refer to the GitHub repository.
+For an in-depth exploration, feel free to dive into the GitHub repository. Witness the magic unfold through meticulously crafted MATLAB code and project details.
 
