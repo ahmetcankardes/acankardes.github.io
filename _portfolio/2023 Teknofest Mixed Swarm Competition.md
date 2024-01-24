@@ -1,6 +1,6 @@
 ---
 title: "2023 Teknofest Mixed Swarm Competition"
-excerpt: "In 2023, I actively participated in the Swarm UAV Competition organized as part of the TEKNOFEST Technology competitions. Tasked with developing software and algorithms for Unmanned Aerial Vehicles (UAVs) operating collaboratively as a swarm, the competition aimed to assess the practical functionality of these algorithms in real-world conditions. As a member of my team, our objective was to comprehend the operational aspects of software algorithms for swarming UAVs and explore their potential applications in both civilian and military domains.<br/><img src='/images/swarm-drones.jpg'>"
+excerpt: "In 2023, I actively participated in the Swarm UAV Competition organized as part of the TEKNOFEST Technology competitions. Tasked with developing software and algorithms for Unmanned Aerial Vehicles (UAVs) operating collaboratively as a swarm, the competition aimed to assess the practical functionality of these algorithms in real-world conditions. As a member of my team, our objective was to comprehend the operational aspects of software algorithms for swarming UAVs and explore their potential applications in both civilian and military domains.<br/><img src='/images/swarm-drones.jpg' width='1000' height='750'>"
 collection: portfolio
 ---
 
