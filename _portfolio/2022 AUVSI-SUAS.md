@@ -68,22 +68,22 @@ Recognizing the complexity and additional computational load of the mentioned al
 The algorithm initially disregards obstacles and determines suitable waypoints between the start and target locations. Subsequently, if there is an obstacle or proximity to an obstacle along the route between two waypoints, the algorithm finds a more suitable and safer third waypoint. Geometric operations are used to find this third waypoint, based on the intersection scenarios of a line and a circle. If there is no intersection, the algorithm checks whether there is a safe distance between the route and the obstacle. If there is no safe distance, a third waypoint away from the obstacle is found based on the user-defined safe distance parameter. The same process is applied if the route is tangential or intersecting the obstacle. This process is summarized in Figure 3. The user can flexibly define the safe distance parameter, providing adaptability to the algorithm's use based on the robot's characteristics and obstacle types. Finally, equations 1 and 2 provide the coordinates calculation of the safe third waypoint.
 
 <p align="center">
-  <img src="/images/obstalce_avoidance.png" alt="Figure 4"/>
+  <img src="/images/obstacle.png" alt="Figure 4"/>
 </p>
 
 <p align="center">
   <em>Figure 3</em>
 </p>
 
-$x = \frac{{x_1 + x_2}}{2} + [(K + M) \times \sin(\alpha)] \quad$ (1)
+$x = \frac{x_1 + x_2}{2} + [(K + M) \times \sin(\alpha)] \quad$ (1)
 
-$y = \frac{{y_1 + y_2}}{2} + [(K + M) \times \cos(\alpha)] \quad$ (2)
+$y = \frac{y_1 + y_2}{2} + [(K + M) \times \cos(\alpha)] \quad$ (2)
 
 
 This process is applied to all waypoints, yielding a sequence of waypoints that do not intersect with obstacles. In this way, the safest and shortest route is determined. The application of this algorithm to specific waypoints can be observed in Figure 4.
 
 <p align="center">
-  <img src="/images/obstacle.png" alt="Figure 4"/>
+  <img src="/images/obstalce_avoidance.png" alt="Figure 4"/>
 </p>
 
 <p align="center">
