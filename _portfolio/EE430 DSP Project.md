@@ -63,7 +63,7 @@ $ m(t; T_d, T_r) = \sum s(x[k])(t - k(T_d + T_r); T_d)$
 
 Here, $T_r$ is the resting duration between two consecutively pressed keys.
 
-## Presenting the Portfolio Showcase
+## Deliverables
 
 ### Transmitter Panel Highlights
 
