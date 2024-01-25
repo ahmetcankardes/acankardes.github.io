@@ -12,7 +12,9 @@ This project, done with my teammates [Furkan Karatoprak](https://www.linkedin.co
 ### Ball and Beam Control System
 Our project centers around the Ball and Beam system, a classic setup for control algorithm design. The goal is to control the position of a ball, or in our case, a Hot Wheels car, on a beam using a DC motor and sensors. We opted for a Hot Wheels car with a straight surface to enhance measurement accuracy, addressing challenges with the Arduino ultrasonic sensor's precision on a round surface.
 
-<br/><img src='/images/ball_beam.gif'>
+<p align="center">
+  <img src="/images/ball_beam.gif"/>
+</p>
 
 ## GitHub Repository
 
